@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>aspnet-CleanArch.MVC-AE92F58E-569D-455B-B6C6-DB0E66567485</UserSecretsId>
+    <UserSecretsId>aspnet-CleanArch.MVCCleanArch.MVC-AE92F58E-569D-455B-B6C6-DB0E66567485</UserSecretsId>
     <StartupObject></StartupObject>
   </PropertyGroup>
 

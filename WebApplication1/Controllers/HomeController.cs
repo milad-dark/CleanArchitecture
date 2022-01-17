@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using WebApplication1.Models;
+using CleanArch.MVC.Models;
 
-namespace WebApplication1.Controllers
+namespace CleanArch.MVC.Controllers
 {
     public class HomeController : Controller
     {

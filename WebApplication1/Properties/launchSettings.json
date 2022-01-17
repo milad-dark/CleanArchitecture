@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "WebApplication1": {
+    "CleanArch.MVC": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

@@ -1,3 +1,4 @@
+using CleanArch.Infra.IoC;
 using CleanArch.Infrast.Data.Context;
 using CleanArch.MVC.Data;
 using Microsoft.AspNetCore.Builder;
@@ -41,6 +42,9 @@ namespace CleanArch.MVC
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            //Add Service IoC
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,6 +76,12 @@ namespace CleanArch.MVC
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+        }
+        
+        //Register Ioc Services
+        public static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
         }
     }
 }

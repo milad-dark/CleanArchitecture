@@ -1,5 +1,6 @@
 ﻿using CleanArch.Application.Interfaces;
 using CleanArch.Application.Services;
+using CleanArch.Domain.Interfaces;
 using CleanArch.Infrast.Data.Repository;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -17,7 +18,7 @@ namespace CleanArch.Infra.IoC
             //Application layer
             services.AddScoped<ICourseService, CourseService>();
             //Infra Data Layer
-            services.AddScoped<CourseRepository, CourseRepository>();
+            services.AddScoped<ICourseRpository, CourseRepository>();
 
         }
     }
